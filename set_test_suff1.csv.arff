@@ -1,0 +1,43 @@
+@relation set_test-weka.filters.unsupervised.attribute.Remove-R9-13
+
+@attribute ending {ar,er,ir}
+@attribute endingstem {h,tu,l,g,vi,c,z,ANY,v,gu}
+@attribute penSyl {bu,ac,bai,re,en,sa,ca,o,sab,mo,se,vi}
+@attribute person {0, 1, 2, 3}
+@attribute number {0, 1}
+@attribute tense {0, 1, 2, 3, 4}
+@attribute mood {0, 1, 2, 3}
+@attribute suff1 {ho,hamos,tuare,tuaba,laría,le,go,gan,vío,quemos,qué,cábamos,cé,zas,lo,lemos,lí,la,é,ía,vo,viera,viste,guiría,gue,guirás,guiréis,viré,vamos,dré}
+
+@data
+ar,h,bu,1,0,0,0,ho
+ar,h,bu,3,1,3,0,hamos
+ar,tu,ac,1,0,2,1,tuare
+ar,tu,ac,1,0,1,0,tuaba
+ar,l,bai,1,0,4,0,laría
+ar,l,bai,1,0,0,1,le
+ar,g,re,1,0,0,0,go
+ar,g,re,3,1,0,0,gan
+ar,vi,en,1,0,0,0,vío
+ar,c,sa,3,1,0,1,quemos
+ar,c,sa,1,0,3,0,qué
+ar,c,sa,3,1,1,0,cábamos
+ar,z,ca,1,0,3,0,cé
+ar,z,ca,2,0,0,0,zas
+er,l,o,1,0,0,0,lo
+er,l,o,3,1,0,0,lemos
+er,l,o,1,0,3,0,lí
+er,l,o,2,0,0,2,la
+er,ANY,sab,1,0,0,0,é
+er,ANY,sab,3,0,1,0,ía
+er,v,mo,1,0,0,0,vo
+er,v,mo,3,0,1,1,viera
+er,v,mo,2,0,3,0,viste
+ir,gu,se,1,0,4,0,guiría
+ir,gu,se,3,0,0,0,gue
+ir,gu,se,2,0,2,0,guirás
+ir,gu,se,2,1,2,0,guiréis
+ir,v,vi,1,0,2,0,viré
+ir,v,vi,3,1,0,1,vamos
+ir,l,sa,1,0,0,0,go
+ir,l,sa,1,0,2,0,dré

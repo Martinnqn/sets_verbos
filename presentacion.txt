@@ -1,0 +1,33 @@
+-de qué se trata
+
+-mostrar el dataset
+	*hablar sobre las diferencias entre la explicación de los atributos en el paper y el uso de los atributos en el dataset.
+
+-tratamiento del dataset
+	* codificación del dataset: el dataset tenía codificación windows-1252.
+	* eliminación de duplicados
+	* aparición de atributos NULL.
+
+-pruebas con algoritmos
+	* árboles de decisión: dependiendo el método de entrenamiento, el porcentaje de clasificación era demasiado bajo (hasta 0%), o generaban árboles demasiado grandes (entre 7mil y 9mil nodos), que no aprendían un patrón, sino que memorizaban las clasificaciones, teniendo un porcentaje de clasificación alto (hasta de 100%), haciendo overfitting. 
+	* tablas de decisión: generaban demasiadas reglas
+
+-separación del dataset en 2: regulares e irregulares
+	* mismas pruebas que con el dataset completo
+	* mismos resultados que con el dataset completo.
+
+-Cambio de planes
+	* ya no queríamos aprender el modelo de conjugación de verbos. Ahora se pretende clasificar cada verbo en regular e irregula, teniendo en cuenta los mismos atributos.
+	* eliminación de las columnas para aprendizaje de conjugación de verbos
+	* incorporación de la columna que indica la clase de cada verbo: irregular o regular.
+
+-unión de los dataset regulares e irregulares. 
+	* multiplicamos la cantidad de verbos regulares, agregando redundancia, ya que ocupaban una pequeña parte del dataset.
+
+-pruebas con algoritmos
+	*árboles de decisión: independientemente del método de entrenamiento, el porcentaje de clasificación era alto, en la mayoría de casos del 100%. La matriz de confusión acusaba algunos falsos positivos (o uno de esos) para verbos irregulares (revisar eso). El árbol creado por el algoritmo random Tree era de unos 1000 nodos con profundidad igual a 4. Modificando un parámetro (cantidad de atributos que verifica por iteración), se alcanzó un árbol que mantenía la presición y reducía su tamaño a 100 nodos y 3 niveles. El árbol generado con j48 tenían alrededor de 100 nodos y profundidad de 2 niveles. Teniendo en cuenta el tamaño de los árboles, podemos suponer que están aprendiendo un patrón en lugar de memorizar todas las posibles clasificaciones. 
+	* Para comprobar la presición del modelo con verbos no entrenados, se propuso un set de testeo de 40 verbos que no están en el set de entrenamiento, y se procedió a verificar la precisión de cada modelo. Para el modelo j48, se clasificó entre el 50% y 55% de correctas, teniendo una precisión del 50% y un recall del 55%.
+	Para el modelo random tree se clasificó el 62% correctamente, teniendo una precisión y un recall de un poco más de 62%. 
+	*tablas de decisión: también se probaron tablas de decisión, también chequeando la correctitud la precisión y el recall con el set de test, obteniendo un 67% de clasificados correctamente, y una precisión y recall de un poco más de 60%
+
+	

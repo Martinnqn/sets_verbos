@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.rules.DecisionTable -- -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     inflection_verbs-weka.filters.unsupervised.attribute.StringToNominal-Rfirst-last
+Instances:    7253
+Attributes:   8
+              ending
+              endingstem
+              penSyl
+              person
+              number
+              tense
+              mood
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Decision Table:
+
+Number of training instances: 7253
+Number of Rules : 87
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 30
+	Merit of best subset found:  100    
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3,8
+Attribute mappings:
+
+Model attributes      	    Incoming attributes
+----------------------	    ----------------
+(nominal) ending      	--> 1 (nominal) ending
+(nominal) endingstem  	--> 2 (nominal) endingstem
+(nominal) penSyl      	--> 3 (nominal) penSyl
+(nominal) person      	--> 4 (nominal) person
+(nominal) number      	--> 5 (nominal) number
+(nominal) tense       	--> 6 (nominal) tense
+(nominal) mood        	--> 7 (nominal) mood
+(nominal) class       	--> 8 (nominal) class
+
+
+Time taken to build model: 0.28 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0     
+Mean absolute error                      0.4896
+Root mean squared error                  0.4904
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,325     0
+                 1,000    1,000    0,675      1,000    0,806      ?        0,500     0,675     1
+Weighted Avg.    0,675    0,675    ?          0,675    ?          ?        0,500     0,561     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  0 13 |  a = 0
+  0 27 |  b = 1
+

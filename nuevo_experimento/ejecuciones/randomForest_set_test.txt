@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     inflection_verbs-weka.filters.unsupervised.attribute.StringToNominal-Rfirst-last
+Instances:    7253
+Attributes:   8
+              ending
+              endingstem
+              penSyl
+              person
+              number
+              tense
+              mood
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes      	    Incoming attributes
+----------------------	    ----------------
+(nominal) ending      	--> 1 (nominal) ending
+(nominal) endingstem  	--> 2 (nominal) endingstem
+(nominal) penSyl      	--> 3 (nominal) penSyl
+(nominal) person      	--> 4 (nominal) person
+(nominal) number      	--> 5 (nominal) number
+(nominal) tense       	--> 6 (nominal) tense
+(nominal) mood        	--> 7 (nominal) mood
+(nominal) class       	--> 8 (nominal) class
+
+
+Time taken to build model: 0.29 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.2228
+Mean absolute error                      0.3965
+Root mean squared error                  0.4671
+Relative absolute error                 81.0006 %
+Root relative squared error             95.2506 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,615    0,370    0,444      0,615    0,516      0,231    0,687     0,434     0
+                 0,630    0,385    0,773      0,630    0,694      0,231    0,687     0,864     1
+Weighted Avg.    0,625    0,380    0,666      0,625    0,636      0,231    0,687     0,724     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8  5 |  a = 0
+ 10 17 |  b = 1
+

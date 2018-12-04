@@ -1,0 +1,154 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -R -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     inflection_verbs-weka.filters.unsupervised.attribute.StringToNominal-Rfirst-last
+Instances:    7253
+Attributes:   8
+              ending
+              endingstem
+              penSyl
+              person
+              number
+              tense
+              mood
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 7253
+Number of Rules : 87
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 30
+	Merit of best subset found:  100    
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3,8
+
+Rules:
+==================================================
+ending     endingstem penSyl     class  
+==================================================
+ir         ANY        mor        1
+ir         ANY        ven        1
+ir         ANY        eí         1
+ir         ANY        sal        1
+ir         ANY        pud        1
+ir         ANY        oí         1
+ir         ANY        luc        1
+ir         ANY        or         1
+ir         ANY        cer        1
+ir         ANY        predec     1
+ir         ANY        interdec   1
+ir         u          f          1
+ir         ANY        desdec     1
+ir         u          h          1
+ir         ANY        contradec  1
+ir         ANY        maldec     1
+ir         ANY        bendec     1
+ar         d          NULL       0
+ar         desand     NULL       0
+ar         and        NULL       0
+ir         ANY        duc        1
+ir         ANY        eñ         1
+ir         ANY        qui        1
+er         ANY        yac        1
+ir         NULL       NULL       1
+er         ANY        val        1
+ir         nt         e          1
+ir         v          e          1
+er         ANY        tra        1
+ir         rt         e          1
+ir         r          e          1
+er         ANY        ra         1
+er         ñ          ANY        0
+er         ANY        quer       1
+er         e          ANY        0
+er         ca         ANY        0
+er         ANY        ol         1
+ar         jug        NULL       1
+ar         err        NULL       1
+er         ANY        cab        1
+ar         and        ANY        0
+ar         i          ANY        0
+er         v          ANY        0
+ar         ANY        sos        1
+ar         ANY        go         1
+ir         uñ         ANY        1
+ar         g          o          1
+ar         z          go         1
+ir         ull        ANY        1
+er         ANY        o          1
+ar         ANY        o          1
+ir         g          e          1
+ar         z          o          1
+ar         g          e          1
+ir         ANY        e          1
+ir         dec        ANY        1
+er         ANY        e          1
+ar         ANY        e          1
+ir         ü          ANY        1
+er         c          o          1
+ar         c          o          1
+ar         z          e          1
+ar         u          ANY        0
+ir         gu         e          1
+ir         u          ANY        1
+ir         ANY        u          1
+er         en         ANY        1
+er         pon        ANY        1
+ar         ANY        eu         1
+er         ac         ANY        1
+er         hab        ANY        1
+ar         ANY        ei         1
+er         ec         ANY        1
+ar         ANY        au         1
+ir         qu         ANY        1
+ar         ANY        ai         1
+ar         g          ANY        0
+ir         g          ANY        1
+er         g          ANY        1
+ir         ANY        ANY        0
+er         ANY        ANY        0
+ar         ANY        ANY        0
+ar         z          ANY        1
+ar         gu         ANY        1
+ir         c          ANY        1
+er         c          ANY        1
+ar         c          ANY        1
+==================================================
+
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7253              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0134
+Root mean squared error                  0.0159
+Relative absolute error                  2.6798 %
+Root relative squared error              3.1802 %
+Total Number of Instances             7253     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     0
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     1
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3410    0 |    a = 0
+    0 3843 |    b = 1
+

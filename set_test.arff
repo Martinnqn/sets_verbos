@@ -1,0 +1,48 @@
+@relation set_test
+
+@attribute ending {ar,er,ir}
+@attribute endingstem {h,tu,l,g,vi,c,z,ANY,v,gu}
+@attribute penSyl {bu,ac,bai,re,en,sa,ca,o,sab,mo,se,vi}
+@attribute person {0, 1, 2, 3}
+@attribute number {0, 1}
+@attribute tense {0, 1, 2, 3, 4}
+@attribute mood {0, 1, 2, 3}
+@attribute suff1 {ho,hamos,tuare,tuaba,laría,le,go,gan,vío,quemos,qué,cábamos,cé,zas,lo,lemos,lí,la,é,ía,vo,viera,viste,guiría,gue,guirás,guiréis,viré,vamos,dré}
+@attribute suff2 {ANY}
+@attribute stemC1 {bú,ANY,rie,hue,s,mue,si,sal}
+@attribute stemC2 {ANY}
+@attribute stemC3 {ANY}
+@attribute palabra {abuhar,actuar,bailar,regar,enviar,sacar,cazar,oler,saber,mover,seguir,vivir,salir}
+
+@data
+ar,h,bu,1,0,0,0,ho,ANY,bú,ANY,ANY,abuhar
+ar,h,bu,3,1,3,0,hamos,ANY,ANY,ANY,ANY,abuhar
+ar,tu,ac,1,0,2,1,tuare,ANY,ANY,ANY,ANY,actuar
+ar,tu,ac,1,0,1,0,tuaba,ANY,ANY,ANY,ANY,actuar
+ar,l,bai,1,0,4,0,laría,ANY,ANY,ANY,ANY,bailar
+ar,l,bai,1,0,0,1,le,ANY,ANY,ANY,ANY,bailar
+ar,g,re,1,0,0,0,go,ANY,rie,ANY,ANY,regar
+ar,g,re,3,1,0,0,gan,ANY,rie,ANY,ANY,regar
+ar,vi,en,1,0,0,0,vío,ANY,ANY,ANY,ANY,enviar
+ar,c,sa,3,1,0,1,quemos,ANY,ANY,ANY,ANY,sacar
+ar,c,sa,1,0,3,0,qué,ANY,ANY,ANY,ANY,sacar
+ar,c,sa,3,1,1,0,cábamos,ANY,ANY,ANY,ANY,sacar
+ar,z,ca,1,0,3,0,cé,ANY,ANY,ANY,ANY,cazar
+ar,z,ca,2,0,0,0,zas,ANY,ANY,ANY,ANY,cazar
+er,l,o,1,0,0,0,lo,ANY,hue,ANY,ANY,oler
+er,l,o,3,1,0,0,lemos,ANY,ANY,ANY,ANY,oler
+er,l,o,1,0,3,0,lí,ANY,ANY,ANY,ANY,oler
+er,l,o,2,0,0,2,la,ANY,hue,ANY,ANY,oler
+er,ANY,sab,1,0,0,0,é,ANY,s,ANY,ANY,saber
+er,ANY,sab,3,0,1,0,ía,ANY,ANY,ANY,ANY,saber
+er,v,mo,1,0,0,0,vo,ANY,mue,ANY,ANY,mover
+er,v,mo,3,0,1,1,viera,ANY,ANY,ANY,ANY,mover
+er,v,mo,2,0,3,0,viste,ANY,ANY,ANY,ANY,mover
+ir,gu,se,1,0,4,0,guiría,ANY,ANY,ANY,ANY,seguir
+ir,gu,se,3,0,0,0,gue,ANY,si,ANY,ANY,seguir
+ir,gu,se,2,0,2,0,guirás,ANY,ANY,ANY,ANY,seguir
+ir,gu,se,2,1,2,0,guiréis,ANY,ANY,ANY,ANY,seguir
+ir,v,vi,1,0,2,0,viré,ANY,ANY,ANY,ANY,vivir
+ir,v,vi,3,1,0,1,vamos,ANY,ANY,ANY,ANY,vivir
+ir,l,sa,1,0,0,0,go,ANY,sal,ANY,ANY,salir
+ir,l,sa,1,0,2,0,dré,ANY,sal,ANY,ANY,salir

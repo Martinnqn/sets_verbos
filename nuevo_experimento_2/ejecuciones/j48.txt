@@ -1,0 +1,210 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     inflection_verbs-weka.filters.unsupervised.attribute.StringToNominal-R2,3
+Instances:    5991
+Attributes:   8
+              ending
+              endingstem
+              penSyl
+              person
+              number
+              tense
+              mood
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+penSyl = ai: 1 (53.0)
+penSyl = au: 1 (53.0)
+penSyl = ei: 1 (53.0)
+penSyl = eu: 1 (53.0)
+penSyl = ANY
+|   endingstem = ANY: 0 (318.0)
+|   endingstem = gu: 0 (99.0/7.0)
+|   endingstem = c
+|   |   tense = 0
+|   |   |   mood = 0: 0 (34.0/2.0)
+|   |   |   mood = 1: 1 (18.0)
+|   |   |   mood = 2: 0 (8.0)
+|   |   |   mood = 3: 0 (6.0)
+|   |   tense = 1: 0 (78.0)
+|   |   tense = 2: 0 (78.0)
+|   |   tense = 3: 0 (35.0/1.0)
+|   |   tense = 4: 0 (36.0)
+|   endingstem = z: 0 (99.0/7.0)
+|   endingstem = g
+|   |   tense = 0
+|   |   |   mood = 0: 0 (34.0/2.0)
+|   |   |   mood = 1
+|   |   |   |   ending = ar: 0 (12.0)
+|   |   |   |   ending = er: 1 (6.0)
+|   |   |   |   ending = ir: 1 (6.0)
+|   |   |   mood = 2: 0 (8.0)
+|   |   |   mood = 3: 0 (6.0)
+|   |   tense = 1: 0 (78.0)
+|   |   tense = 2: 0 (78.0)
+|   |   tense = 3: 0 (36.0)
+|   |   tense = 4: 0 (36.0)
+|   endingstem = qu: 0 (98.0/8.0)
+|   endingstem = err: 0 (0.0)
+|   endingstem = jug: 0 (0.0)
+|   endingstem = ec: 0 (93.0/1.0)
+|   endingstem = hab
+|   |   mood = 0
+|   |   |   tense = 0: 1 (7.0/2.0)
+|   |   |   tense = 1: 0 (12.0)
+|   |   |   tense = 2: 0 (12.0)
+|   |   |   tense = 3: 1 (6.0)
+|   |   |   tense = 4: 0 (12.0)
+|   |   mood = 1: 1 (18.0)
+|   |   mood = 2: 0 (3.0/1.0)
+|   |   mood = 3: 0 (6.0)
+|   endingstem = ac
+|   |   mood = 0
+|   |   |   tense = 0: 0 (11.0/1.0)
+|   |   |   tense = 1: 0 (12.0)
+|   |   |   tense = 2: 1 (6.0)
+|   |   |   tense = 3: 1 (6.0)
+|   |   |   tense = 4: 1 (6.0)
+|   |   mood = 1: 1 (18.0)
+|   |   mood = 2: 0 (3.0/1.0)
+|   |   mood = 3: 0 (5.0/1.0)
+|   endingstem = en
+|   |   tense = 0: 0 (27.0/3.0)
+|   |   tense = 1
+|   |   |   mood = 0: 0 (12.0)
+|   |   |   mood = 1: 1 (6.0)
+|   |   |   mood = 2: 0 (0.0)
+|   |   |   mood = 3: 0 (2.0)
+|   |   tense = 2
+|   |   |   mood = 0: 1 (6.0)
+|   |   |   mood = 1: 1 (6.0)
+|   |   |   mood = 2: 1 (0.0)
+|   |   |   mood = 3: 0 (2.0)
+|   |   tense = 3: 1 (6.0)
+|   |   tense = 4: 0 (12.0)
+|   endingstem = pon
+|   |   mood = 0
+|   |   |   tense = 0: 0 (12.0)
+|   |   |   tense = 1: 0 (12.0)
+|   |   |   tense = 2: 0 (12.0)
+|   |   |   tense = 3: 1 (6.0)
+|   |   |   tense = 4: 0 (12.0)
+|   |   mood = 1
+|   |   |   tense = 0: 0 (12.0)
+|   |   |   tense = 1: 1 (6.0)
+|   |   |   tense = 2: 1 (6.0)
+|   |   |   tense = 3: 0 (0.0)
+|   |   |   tense = 4: 0 (0.0)
+|   |   mood = 2: 1 (2.0)
+|   |   mood = 3: 0 (3.0/1.0)
+|   endingstem = ü
+|   |   mood = 0: 0 (54.0/6.0)
+|   |   mood = 1: 1 (18.0)
+|   |   mood = 2: 0 (3.0/1.0)
+|   |   mood = 3: 0 (5.0/1.0)
+|   endingstem = u: 0 (211.0/1.0)
+|   endingstem = dec
+|   |   tense = 0
+|   |   |   mood = 0
+|   |   |   |   number = 0: 1 (3.0)
+|   |   |   |   number = 1: 0 (5.0/1.0)
+|   |   |   mood = 1: 1 (6.0)
+|   |   |   mood = 2: 0 (3.0/1.0)
+|   |   |   mood = 3: 0 (2.0)
+|   |   tense = 1
+|   |   |   mood = 0: 0 (12.0)
+|   |   |   mood = 1: 1 (6.0)
+|   |   |   mood = 2: 0 (0.0)
+|   |   |   mood = 3: 1 (1.0)
+|   |   tense = 2: 1 (13.0)
+|   |   tense = 3: 1 (6.0)
+|   |   tense = 4: 1 (6.0)
+|   endingstem = NULL: 0 (0.0)
+|   endingstem = r: 0 (0.0)
+|   endingstem = rt: 0 (0.0)
+|   endingstem = v: 0 (106.0)
+|   endingstem = nt: 0 (0.0)
+|   endingstem = ull: 0 (105.0/1.0)
+|   endingstem = uñ: 0 (105.0/1.0)
+|   endingstem = i: 0 (106.0)
+|   endingstem = and: 0 (12.0)
+|   endingstem = desand: 0 (0.0)
+|   endingstem = d: 0 (0.0)
+|   endingstem = ca: 0 (106.0)
+|   endingstem = e: 0 (104.0)
+|   endingstem = ñ: 0 (106.0)
+penSyl = u: 1 (47.0)
+penSyl = e: 1 (578.0)
+penSyl = o: 1 (316.0)
+penSyl = go: 1 (106.0)
+penSyl = sos: 1 (53.0)
+penSyl = NULL
+|   ending = ar: 0 (488.0/18.0)
+|   ending = er: 0 (0.0)
+|   ending = ir: 1 (53.0)
+penSyl = cab: 1 (53.0)
+penSyl = ol: 1 (52.0)
+penSyl = quer: 1 (52.0)
+penSyl = ra: 1 (53.0)
+penSyl = tra: 1 (53.0)
+penSyl = val: 1 (53.0)
+penSyl = yac: 1 (53.0)
+penSyl = qui: 1 (53.0)
+penSyl = eñ: 1 (53.0)
+penSyl = duc: 1 (53.0)
+penSyl = h: 1 (53.0)
+penSyl = f: 1 (53.0)
+penSyl = bendec: 1 (53.0)
+penSyl = maldec: 1 (53.0)
+penSyl = contradec: 1 (53.0)
+penSyl = desdec: 1 (53.0)
+penSyl = interdec: 1 (53.0)
+penSyl = predec: 1 (53.0)
+penSyl = cer: 1 (53.0)
+penSyl = or: 1 (53.0)
+penSyl = luc: 1 (53.0)
+penSyl = oí: 1 (53.0)
+penSyl = pud: 1 (53.0)
+penSyl = sal: 1 (53.0)
+penSyl = eí: 1 (53.0)
+penSyl = ven: 1 (53.0)
+penSyl = mor: 1 (53.0)
+
+Number of Leaves  : 	134
+
+Size of the tree : 	157
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5892               98.3475 %
+Incorrectly Classified Instances        99                1.6525 %
+Kappa statistic                          0.967 
+Mean absolute error                      0.0262
+Root mean squared error                  0.1248
+Relative absolute error                  5.2427 %
+Root relative squared error             24.9688 %
+Total Number of Instances             5991     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,997    0,030    0,970      0,997    0,983      0,967    0,991     0,985     0
+                 0,970    0,003    0,997      0,970    0,984      0,967    0,991     0,993     1
+Weighted Avg.    0,983    0,016    0,984      0,983    0,983      0,967    0,991     0,989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2924    8 |    a = 0
+   91 2968 |    b = 1
+

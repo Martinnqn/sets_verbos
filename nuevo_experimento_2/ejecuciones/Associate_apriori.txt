@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     inflection_verbs-weka.filters.unsupervised.attribute.StringToNominal-R2,3
+Instances:    5991
+Attributes:   8
+              ending
+              endingstem
+              penSyl
+              person
+              number
+              tense
+              mood
+              class
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (599 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 19
+
+Size of set of large itemsets L(2): 97
+
+Size of set of large itemsets L(3): 39
+
+Size of set of large itemsets L(4): 4
+
+Best rules found:
+
+ 1. ending=er class=0 984 ==> penSyl=ANY 984    <conf:(1)> lift:(2.21) lev:(0.09) [539] conv:(539.06)
+ 2. ending=ir class=0 766 ==> penSyl=ANY 766    <conf:(1)> lift:(2.21) lev:(0.07) [419] conv:(419.63)
+ 3. tense=4 702 ==> mood=0 702    <conf:(1)> lift:(1.73) lev:(0.05) [296] conv:(296.34)
+ 4. tense=3 667 ==> mood=0 667    <conf:(1)> lift:(1.73) lev:(0.05) [281] conv:(281.56)
+ 5. ending=er mood=0 class=0 612 ==> penSyl=ANY 612    <conf:(1)> lift:(2.21) lev:(0.06) [335] conv:(335.27)
+ 6. ending=ar penSyl=ANY 733 ==> class=0 712    <conf:(0.97)> lift:(1.98) lev:(0.06) [353] conv:(17.01)
+ 7. penSyl=ANY number=1 mood=0 810 ==> class=0 774    <conf:(0.96)> lift:(1.95) lev:(0.06) [377] conv:(11.18)
+ 8. penSyl=ANY mood=0 1604 ==> class=0 1516    <conf:(0.95)> lift:(1.93) lev:(0.12) [731] conv:(9.2)
+ 9. penSyl=ANY tense=1 689 ==> class=0 650    <conf:(0.94)> lift:(1.93) lev:(0.05) [312] conv:(8.8)
+10. penSyl=ANY number=0 mood=0 794 ==> class=0 742    <conf:(0.93)> lift:(1.91) lev:(0.06) [353] conv:(7.65)
+
